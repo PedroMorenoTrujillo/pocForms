@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+@import "bootstrap/dist/css/bootstrap.min.css" layer(bootstrap);
+@import "primeng/resources/themes/lara-light-blue/theme.css";
+@import "primeng/resources/primeng.css";
+@import '_form_input';
+
+//FONTS
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+$font-base-typography: 'Poppins', sans-serif;
+
+* {
+  font-family: $font-base-typography;
+}

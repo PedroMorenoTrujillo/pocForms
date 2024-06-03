@@ -1,0 +1,13 @@
+.main-container{
+  margin-top: 100px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  .form-container{
+    display: flex;
+    justify-content: center;
+    width: 80%;
+    background-color: beige;
+    padding: 1rem;
+  }
+}

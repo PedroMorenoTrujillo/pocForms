@@ -1,0 +1,32 @@
+.form-container {
+  &__body {
+    &__element {
+      width: 100%;
+      flex-wrap: wrap;
+      min-width: 10rem;
+      &.w_75 {
+        width: 75%;
+      }
+      &.w_50 {
+        width: 50%;
+      }
+      &.w_25 {
+        width: 25%;
+      }
+      &.w_33 {
+        width: 33%;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  .form-container {
+    &__body {
+      &__element {
+        width: 100% !important;
+        margin: 0.5rem auto;
+      }
+    }
+  }
+}

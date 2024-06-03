@@ -1,0 +1,20 @@
+@if (item) {
+  <span class="">
+    <label [for]="item.formControlName">{{ item.label | translate | titlecase }}</label>
+    <p-calendar
+      [formControl]="control"
+      [inputId]="item.formControlName"
+      [readonlyInput]="item.readonly"
+      [showTime]="item.calendarTime || false"
+      [showButtonBar]="true"
+      dateFormat="dd/mm/yy"
+      appendTo="body"
+      [placeholder]="item.placeholder ? (item.placeholder | translate) : null"
+      (onClear)="clearDate()"
+      (onSelect)="onDateChange($event)"
+    ></p-calendar>
+  </span>
+  @if (errorMessage) {
+    <div class="error-message">{{ errorMessage | translate }}</div>
+  }
+}

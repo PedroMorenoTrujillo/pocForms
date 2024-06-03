@@ -1,0 +1,30 @@
+@if (item) {
+  <span class="">
+    <label [for]="item.formControlName">{{ item.label | translate | titlecase }}</label>
+    <p-multiSelect
+      class="{{ item.secondarySize }}"
+      [options]="item.dropDownOptions"
+      [formControl]="control"
+      [placeholder]="item.label | translate | titlecase"
+      [inputId]="item.formControlName"
+      dataKey="value"
+      optionLabel="label"
+      [inputId]="item.formControlName"
+      [showClear]="true"
+      [filter]="true"
+      filterBy="label"
+      [readonly]="item.readonly || false"
+      appendTo="body"
+      [resetFilterOnHide]="true"
+      optionValue="value"
+      [lazy]="true"
+    >
+      <ng-template let-item pTemplate="item">
+        <span class="inline-flex align-items-center gap-2">{{ item.label | translate }}</span>
+      </ng-template>
+    </p-multiSelect>
+  </span>
+  @if (errorMessage) {
+    <div class="error-message">{{ errorMessage | translate }}</div>
+  }
+}

@@ -1,0 +1,19 @@
+// .p-float-label {
+//   .form-control {
+//     min-width: 8rem;
+//     //max-width: 99%;
+//   }
+// }
+
+.form-control {
+  min-width: 8rem;
+  height: 40px;
+  margin-top: 5px;
+  //max-width: 99%;
+  &.text-area {
+    height: 120px;
+  }
+}
+.error-message {
+  color: red;
+}

@@ -1,0 +1,18 @@
+@if (item) {
+  <div class="d-flex alig-items-center checkBox-container">
+    <input
+      class="form-check-input"
+      type="checkbox"
+      [attr.disabled]="item.readonly ? true : null"
+      [formControl]="control"
+      [id]="item.formControlName"
+      [checked]="item.value"
+    />
+    <label class="mx-2 fw-bold" [for]="item.formControlName">
+      {{ item.label | translate | titlecase }}
+    </label>
+    @if (errorMessage) {
+      <div class="error-message">{{ errorMessage | translate }}</div>
+    }
+  </div>
+}

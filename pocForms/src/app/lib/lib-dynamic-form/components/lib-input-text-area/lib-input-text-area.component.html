@@ -1,0 +1,18 @@
+@if (item) {
+  <span class="">
+    <label [for]="item.formControlName">{{ item.label | translate | titlecase }}</label>
+    <textarea
+      [id]="item.formControlName"
+      rows="5"
+      cols="30"
+      class="form-control text-area"
+      pInputTextarea
+      (blur)="onTouch()"
+      [formControl]="control"
+      [readonly]="item.readonly"
+    ></textarea>
+  </span>
+  @if (errorMessage) {
+    <div class="error-message">{{ errorMessage | translate }}</div>
+  }
+}

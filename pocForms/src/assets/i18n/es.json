@@ -1,0 +1,115 @@
+{
+  "header": {
+    "search": "Busca aquí",
+    "menu": {
+      "myProfile": "Mi perfil",
+      "language": "Idioma",
+      "logout": "Cerrar Sesión"
+    }
+  },
+  "languages": {
+    "spanish": "Español",
+    "english": "Inglés"
+  },
+  "dashboard": {
+    "myCurrentCastings": "Mis castings actuales",
+    "noCastings": "No tienes ningun casting creado",
+    "preSelected": "Pre-Seleccionados",
+    "selected": "Seleccionados",
+    "readMore": "Leer más"
+  },
+  "pageLayout": {
+    "back": "Volver"
+  },
+  "castingDetail": {
+    "description": "Descripción del casting"
+  },
+  "castingRole": {
+    "modify": "Modificar"
+  },
+  "profile": {
+    "tabs": {
+      "publicProfile": "Perfil Público",
+      "personalData": "Datos Personales",
+      "gallery": "Galería",
+      "appearance": "Apariencia",
+      "skills": "Habilidades",
+      "bankData": "Datos Bancarios"
+    },
+    "formFields": {
+      "name": "Nombre",
+      "surname1": "Apellido 1",
+      "surname2": "Apellido 2",
+      "email": "Email",
+      "phone": "Teléfono",
+      "birthdate": "Fecha de nacimiento",
+      "country": "País",
+      "city": "Ciudad",
+      "address": "Dirección",
+      "postalCode": "Código Postal",
+      "nationality": "Nacionalidad",
+      "identificationType": "Tipo de identificación",
+      "identificationNumber": "Número de identificación",
+      "socialSecurityNumber": "Número de seguridad social",
+      "languages": "Idiomas",
+      "availability": "Disponibilidad",
+      "description": "Descripción",
+      "profilePicture": "Imagen de perfil",
+      "age": "Edad",
+      "race": "Raza",
+      "gender": "Género",
+      "height": "Altura",
+      "weight": "Peso",
+      "shirtSize": "Talla de camisa",
+      "pantsSize": "Talla de pantalones",
+      "chestSize": "Talla de pecho",
+      "hipsSize": "Talla de cadera",
+      "waistSize": "Talla de cintura",
+      "blazerSize": "Talla de blazer",
+      "footSize": "Talla de pie",
+      "hairColor": "Color de pelo",
+      "eyeColor": "Color de ojos",
+      "hairStyle": "Estilo de pelo",
+      "tattoo": "Tatuaje",
+      "tattooDescription": "Descripción tatuaje",
+      "bodyType": "Tipo de cuerpo",
+      "facialHair": "Vello facial",
+      "scars": "Cicatrices",
+      "scarsDescription": "Descripción cicatrices",
+      "hijab": "Hijab",
+      "hijabDescription": "Description hijab",
+      "piercing": "Piercing",
+      "piercingDescription": "Descripción Piercing",
+      "glasses": "Gafas",
+      "glassesDescription": "Tipo gafas",
+      "prothesys": "Prothesys",
+      "prothesysDescription": "Descripción protesis",
+      "brackets": "Brackets",
+      "reduceMobility": "Mobilidad reducida",
+      "reduceMobilityDescription": "Descripción mobilidad reducida",
+      "albino": "Albino",
+      "freckle": "Pecas",
+      "downSyndrome": "Síndrome de Down",
+      "dwarf": "Enanismo",
+      "deafMute": "Sordera",
+      "driveLicense": "Licencia de conducir",
+      "ownVehicle": "Vehículo propio",
+      "foodHandler": "Manipulador de alimentos",
+      "singer": "Cantante",
+      "musicInstrument": "Instrumento musical",
+      "dance": "Baile",
+      "sport": "Deporte",
+      "other": "Otro",
+      "circusSkill": "Habilidad de circo",
+      "shipMaster": "Maestro de barco",
+      "horseRider": "Jinete de caballos",
+      "nudes": "Desnudos",
+      "children": "Niños",
+      "pets": "Mascotas",
+      "bankName": "Nombre del banco",
+      "accountNumber": "Número de cuenta",
+      "accountType": "Tipo de cuenta",
+      "iban": "IBAN"
+    }
+  }
+}

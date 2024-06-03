@@ -1,0 +1,115 @@
+{
+  "header": {
+    "search": "Search here",
+    "menu": {
+      "myProfile": "My Profile",
+      "language": "Language",
+      "logout": "Logout"
+    }
+  },
+  "languages": {
+    "spanish": "Spanish",
+    "english": "English"
+  },
+  "dashboard": {
+    "myCurrentCastings": "My Current Castings",
+    "noCastings": "You dont have any casting created",
+    "preSelected": "Pre-Selected",
+    "selected": "Selected",
+    "readMore": "Read More"
+  },
+  "pageLayout": {
+    "back": "Back"
+  },
+  "castingDetail": {
+    "description": "Casting description"
+  },
+  "castingRole": {
+    "modify": "Modify"
+  },
+  "profile": {
+    "tabs": {
+      "publicProfile": "Public Profile",
+      "personalData": "Personal Data",
+      "gallery": "Gallery",
+      "appearance": "Appearance",
+      "skills": "Skills",
+      "bankData": "Bank Data"
+    },
+    "formFields": {
+      "name": "Name",
+      "surname1": "Surname 1",
+      "surname2": "Surname 2",
+      "email": "Email",
+      "phone": "Phone",
+      "birthdate": "Birthdate",
+      "country": "Country",
+      "city": "City",
+      "address": "Address",
+      "postalCode": "Postal Code",
+      "nationality": "Nationality",
+      "identificationType": "Identification Type",
+      "identificationNumber": "Identification Number",
+      "socialSecurityNumber": "Social Security Number",
+      "languages": "Languages",
+      "availability": "Availability",
+      "description": "Description",
+      "profilePicture": "Profile Picture",
+      "age": "Age",
+      "race": "Race",
+      "gender": "Gender",
+      "height": "Height",
+      "weight": "Weight",
+      "shirtSize": "Shirt Size",
+      "pantsSize": "Pants Size",
+      "chestSize": "Chest Size",
+      "hipsSize": "Hip Size",
+      "waistSize": "Waist Size",
+      "blazerSize": "Blazer Size",
+      "footSize": "Foot Size",
+      "hairColor": "Hair Color",
+      "eyeColor": "Eye Color",
+      "hairStyle": "Hair Style",
+      "tattoo": "Tattoo",
+      "tattooDescription": "Tattoo Description",
+      "bodyType": "Body Type",
+      "facialHair": "Facial Hair",
+      "scars": "Scars",
+      "scarsDescription": "Scars Description",
+      "hijab": "Hijab",
+      "hijabDescription": "Hijab Description",
+      "piercing": "Piercing",
+      "piercingDescription": "Piercing Description",
+      "glasses": "Glasses",
+      "glassesDescription": "Glasses Description",
+      "prothesys": "Prothesys",
+      "prothesysDescription": "Prothesys Description",
+      "brackets": "Brackets",
+      "reduceMobility": "Reduce Mobility",
+      "reduceMobilityDescription": "Reduce Mobility Description",
+      "albino": "Albino",
+      "freckle": "Freckle",
+      "downSyndrome": "Down Syndrome",
+      "dwarf": "Dwarf",
+      "deafMute": "Deaf Mute",
+      "driveLicense": "Drive License",
+      "ownVehicle": "Own Vehicle",
+      "foodHandler": "Food Handler",
+      "singer": "Singer",
+      "musicInstrument": "Music Instrument",
+      "dance": "Dance",
+      "sport": "Sport",
+      "other": "Other",
+      "circusSkill": "Circus Skill",
+      "shipMaster": "Ship Master",
+      "horseRider": "Horse Rider",
+      "nudes": "Nudes",
+      "children": "Children",
+      "pets": "Pets",
+      "bankName": "Back Name",
+      "accountNumber": "Account Number",
+      "accountType": "Account Type",
+      "iban": "IBAN"
+    }
+  }
+}

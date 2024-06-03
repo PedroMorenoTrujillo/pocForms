@@ -1,0 +1,59 @@
+@if (dynamic) {
+<div class="form-container">
+  <form [formGroup]="dynamicForm">
+    <div
+      class="form-container__body d-flex mb-3 flex-wrap justify-content-start"
+    >
+      @for(item of dynamic; track $index){
+      <div class="form-container__body__element mb-5 px-1 {{ item.size }}">
+        @if(item.type === formTypes.TEXT || item.type === formTypes.PASSWORD ||
+        item.type === formTypes.NUMBER || item.type === formTypes.EMAIL){
+        <lib-input-text
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-input-text>
+        } @if(item.type === formTypes.TEXTAREA){
+        <lib-input-text-area
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-input-text-area>
+        } @if(item.type === formTypes.CHECKBOX){
+        <lib-checkbox
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-checkbox>
+        } @if(item.type === formTypes.SWITCH){
+        <lib-switch
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-switch>
+        } @if(item.type === formTypes.SINGLE_SELECT){
+        <lib-single-select
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-single-select>
+        } @if(item.type === formTypes.MULTI_SELECT){
+        <lib-multi-select
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-multi-select>
+        } @if(item.type === formTypes.DATE){
+        <lib-calendar
+          [formControlName]="item.formControlName"
+          [item]="item"
+          [errorMessage]="getError(item.formControlName)"
+        ></lib-calendar>
+        }
+      </div>
+      }
+    </div>
+    <button (click)="submit()">Submit</button>
+  </form>
+</div>
+}

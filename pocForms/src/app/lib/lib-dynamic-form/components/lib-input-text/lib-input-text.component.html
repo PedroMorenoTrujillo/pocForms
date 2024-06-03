@@ -1,0 +1,35 @@
+@if (item) {
+  <span class="">
+    <label [for]="item.formControlName">{{ item.label | translate | titlecase }}</label>
+    @if (
+      item.type === formTypes.TEXT ||
+      item.type === formTypes.EMAIL ||
+      item.type === formTypes.PASSWORD
+    ) {
+      <input
+        [type]="item.type"
+        pInputText
+        class="form-control"
+        [id]="item.formControlName"
+        [readonly]="item.readonly"
+        (blur)="onTouch()"
+        [formControl]="control"
+      />
+    } @else {
+      <input
+        [type]="item.type"
+        pInputText
+        class="form-control"
+        [id]="item.formControlName"
+        [readonly]="item.readonly"
+        (blur)="onTouch()"
+        [max]="item.maxValue"
+        [min]="item.minValue"
+        [formControl]="control"
+      />
+    }
+  </span>
+  @if (errorMessage) {
+    <div class="error-message">{{ errorMessage | translate }}</div>
+  }
+}
