@@ -1,0 +1,41 @@
+::ng-deep {
+  p-inputnumber.p-element {
+    height: 33px;
+    width: auto;
+
+    .p-inputnumber.p-component {
+      .p-inputtext {
+        margin: 0;
+
+        &:enabled:focus {
+          border-color: transparent;
+          box-shadow: none;
+        }
+      }
+
+      &.p-inputnumber-buttons-stacked {
+        .p-inputnumber-button-group {
+          height: 33px;
+        }
+      }
+
+      &.p-inputnumber-buttons-horizontal {
+        input {
+          height: 33px;
+          min-width: 50px;
+        }
+
+        button {
+          height: 32px;
+          margin-inline: 0.5rem;
+        }
+      }
+    }
+
+    &.only-buttons-controller {
+      .p-inputnumber.p-component .p-inputtext {
+        pointer-events: none;
+      }
+    }
+  }
+}

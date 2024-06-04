@@ -1,5 +1,88 @@
 <div class="main-container">
+
+  <div class="option1">
+    <h6>Form 1</h6>
+    <form (ngSubmit)="onSubmit1()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" [(ngModel)]="form1.name" name="name" required>
+      </div>
+      <div>
+        <label for="Surname">Surname:</label>
+        <input type="Surname" id="Surname" [(ngModel)]="form1.surname" name="Surname" required>
+      </div>
+      <button type="submit">Submit</button>
+    </form>
+    <div *ngIf="form1?.name || form1?.surname">
+      <h2>Form Data:</h2>
+      <p><strong>Name:</strong> {{ form1.name }}</p>
+      <p><strong>Surname:</strong> {{ form1.surname }}</p>
+    </div>
+  </div>
+
+  <div class="option2">
+    <h6>Form 2</h6>
+    <form [formGroup]="form2" (ngSubmit)="onSubmit2()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+        <div *ngIf="form2.get('name')?.invalid && form2.get('name')?.touched">
+          Name is required.
+        </div>
+      </div>
+      <div>
+        <label for="surname">Surname:</label>
+        <input type="text" id="surname" formControlName="surname">
+        <div *ngIf="form2.get('surname')?.invalid && form2.get('surname')?.touched">
+          Surname is required.
+        </div>
+      </div>
+      <button type="submit" [disabled]="form2.invalid">Submit</button>
+    </form>
+    <div *ngIf="form2.value.name || form2.value.surname">
+      <h2>Form Data:</h2>
+      <p><strong>Name:</strong> {{ form2.value.name }}</p>
+      <p><strong>Surname:</strong> {{ form2.value.surname }}</p>
+    </div>
+  </div>
+
+  <div class="option3">
+    <h6>Form 3</h6>
+    <form [formGroup]="form3" (ngSubmit)="onSubmit3()">
+      <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" formControlName="name">
+        <prime-input-text formControlName="name"></prime-input-text>
+        <div *ngIf="form3.get('name')?.invalid && form3.get('name')?.touched">
+          Name is required.
+        </div>
+      </div>
+      <div>
+        <label for="number">Number:</label>
+        <app-input-number formControlName="number"></app-input-number>
+        <!-- <app-input-number
+          class="p-px-1"
+          formControlName="number"
+          [showButtons]="false"
+          [min]="0"
+          [placeholder]="'-'"
+          [step]="1"></app-input-number> -->
+        <div *ngIf="form3.get('number')?.invalid && form3.get('number')?.touched">
+          Surname is required.
+        </div>
+      </div>
+      <button type="submit" [disabled]="form3.invalid">Submit</button>
+    </form>
+    <div *ngIf="form3.value.name || form3.value.number">
+      <h2>Form Data:</h2>
+      <p><strong>Name:</strong> {{ form3.value.name }}</p>
+      <p><strong>Number:</strong> {{ form3.value.number }}</p>
+    </div>
+  </div>
+
+
   <div class="form-container">
+    <h6>Dynamic</h6>
     <lib-dynamic-form [dynamic]="profileForm"></lib-dynamic-form>
   </div>
 </div>
